@@ -1,0 +1,61 @@
+/* General styles for the tabbed interface */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: 30vh;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+}
+
+ .tab{
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color:gray;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+ }
+
+ .tab.active{
+    color: #000000;
+    font-weight: bold;
+    text-decoration:none;
+    transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease, border-radius 0.3s ease, border 0.3s ease;
+ }
+
+ .tabs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+
+.content-container {
+display: block;
+justify-content: center;
+align-items: center;
+    
+}
+
+ .tab-content {
+    display: none;
+    background-color: #000000;
+    border-radius: 10px;
+    height: 100px;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}  
+
+.tab-content.active {
+    display: flex;
+}
+
+
+
